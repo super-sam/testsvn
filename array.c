@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define MAX 16
-/*change reverse merge test*/
+
 void accept_input(int *arr, int n) {
    int i;
    for (i = 0; i < n; ++i) 
