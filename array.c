@@ -5,6 +5,11 @@ int main(void) {
    int i, n, arr[MAX];
    printf("Enter the total number of elements: ");
    scanf("%d", &n);
+   /* handle array overflow condition */
+   if (n > MAX) {
+      fprintf(stderr, "Number of elements must be less than %d\n", MAX);
+      return 1;
+   }
 
    printf("Enter the elements\n");
 
